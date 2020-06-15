@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="shortcut icon" href="data:image/x-icon" type="image/x-icon">
+  <title>Star Wars!</title>
+
+  <!-- Bootstrap  -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">
+  <!-- Local styles -->
+  <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+  <header class="text-center">
+    <img src="images/logo.jpg" alt="hogwards logo" class="logo">
+  </header>
+  <main class="container">
+    <div class="row">
+
+      <section class="card center">
+        <h1>Lookup any Hogwards Student!</h1>
+        <form>
+          <div class="form-group">
+            <label for="characters"></label>
+            <select name="characters" id="characters" class="form-control">
+              <option value="null">Choose a student</option>
+            </select>
+          </div>
+        </form>
+      </section>
+
+      <section id="container" class="card invisible" >
+      <table id="results" class="table  table-dark visible">
+
+      </table>
+      </section>
+
+    </div>
+  </main>
+  <script src="index.js"></script>
+</body>
+
+</html>
